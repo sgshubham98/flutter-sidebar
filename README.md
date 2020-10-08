@@ -1,6 +1,8 @@
 # sidebar
 
-A new Flutter project.
+Implementation of side menu bar. 
+
+<img src="./media/demo.gif" width="240" height="427" alt="gif" />
 
 ## Getting Started
 
