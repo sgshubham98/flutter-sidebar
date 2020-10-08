@@ -15,9 +15,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: Duration(milliseconds: 250),
-      color: Colors.white,
       transform: Matrix4.translationValues(xOffSet, yOffSet, 0)
-        ..scale(scaleFactor),
+        ..scale(scaleFactor)
+        ..rotateY(drawerStatus ? -0.5 : 0),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(
+          drawerStatus ? 32.0 : 0.0,
+        ),
+      ),
       child: Column(
         children: [
           Row(
